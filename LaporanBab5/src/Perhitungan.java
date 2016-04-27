@@ -10,5 +10,13 @@ public class Perhitungan {
         hasil = a - b;
         return hasil;
     }
+    public double perkalian (double a, double b){
+        hasil = a*b;
+        return hasil;
+    }
+    public double pembagian (double a, double b){
+        hasil = a / b;
+        return hasil;
+    }
     
 }
