@@ -58,4 +58,30 @@ public class Perusahaan {
         System.out.printf("|%-5s |%-20s |%5s | \n", "3", "JAKET BAHAN C", "Rp. 175.000");
         System.out.println("==========================================");
     }
+     public void displayLast(){
+        int z=0;
+        System.out.println("====================================================");
+        System.out.printf("%31s \n","CV. LABKOMDAS");
+        System.out.println("====================================================");
+        System.out.println("====================================================");
+        System.out.printf("|%-5s |%-20s |%-6s |%-12s | \n", "NO", "JENIS JAKET", "BANYAK","HARGA");
+        System.out.println("====================================================");
+        if(banyakA != 0){
+            z++;
+            System.out.printf("|%-5s |%-20s |%-6s |Rp.%9s | \n", z, "JAKET BAHAN A",banyakA,totalA(banyakA));
+        }
+        if(banyakB != 0){
+            z++;
+            System.out.printf("|%-5s |%-20s |%-6s |Rp.%9s | \n", z, "JAKET BAHAN B",banyakB,totalB(banyakB));
+        }
+        if(banyakC != 0){
+            z++;
+            System.out.printf("|%-5s |%-20s |%-6s |Rp.%9s | \n", z, "JAKET BAHAN C",banyakC,totalC(banyakC));
+        }
+        System.out.println("====================================================");
+        System.out.printf("|%-35s |Rp.%9s | \n",  "TOTAL HARGA",(jumlahA+jumlahB+jumlahC));
+        System.out.println("====================================================");
+        System.out.printf("%31s \n","TERIMA KASIH");
+        System.out.println("====================================================");
+    }
 }
