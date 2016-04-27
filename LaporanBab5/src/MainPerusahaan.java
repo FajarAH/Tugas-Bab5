@@ -8,5 +8,6 @@ public class MainPerusahaan {
         Perusahaan user = new Perusahaan();
         int pilih;
         user.displayMessage();
+        
     }
 }

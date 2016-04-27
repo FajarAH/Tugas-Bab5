@@ -6,6 +6,9 @@ public class Perusahaan {
     private static int jumlahA = 0;
     private static int jumlahB = 0;
     private static int jumlahC = 0;
+     private static int banyakA = 0;
+    private static int banyakB = 0;
+    private static int banyakC = 0;
     
     
     
@@ -34,6 +37,15 @@ public class Perusahaan {
             jumlahC = jumlah * jaketC;
         }
         return jumlahC;
+    }
+     public void setA(int n){
+        banyakA+=n;
+    }
+    public void setB(int n){
+        banyakB+=n;
+    }
+    public void setC(int n){
+        banyakC+=n;
     }
      public void displayMessage() {
         System.out.println("==========================================");
