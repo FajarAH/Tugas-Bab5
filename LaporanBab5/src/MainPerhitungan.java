@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class MainPerhitungan {
     public static void main(String[] args) {
           Scanner in = new Scanner(System.in);
-        int pil;
+        int pil,pilih;
          double bil1, bil2;
         Perhitungan user = new Perhitungan();
-        
+        do{
             System.out.println("\t\tMesin Perhitungan");
             System.out.println("Daftar Menu: ");
             System.out.println("1. Penjumlahan");
@@ -57,6 +57,13 @@ public class MainPerhitungan {
                 default:
                     System.out.println("Maaf pilihan yang anda masukkan salah, silahkan coba lagi.\n");                   
             }
+              System.out.println("Ingin melakukan perhitungan lagi?\n"
+                                    + "1. Ya\n"
+                                    + "2. Tidak");
+            System.out.print("Pilihan anda\t: ");
+            pilih = in.nextInt();
+            
+    }while(pilih!=2);
             
     }
 }
